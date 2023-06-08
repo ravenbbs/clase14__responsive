@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.header__promo{
+  background-color: #1CD1B0;
+  block-size: 38px; 
+}
+.promo__span{
+  margin: 12px;
+  display: inline-block;
+  font-weight: 400;
+}
+.header{
+  position: sticky;
+  inset-block-start: 0;
+  inline-size: 100%;
+  background-color: #00669F;
+  block-size: 101px;
+  box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.43);
+  z-index: 1;
+  padding: 22px;
+}
+.header__title{
+  margin:0;
+  font-weight: 500;
+}
+.main{
+  position: relative;
+  min-block-size: 100%;
+  padding: 0 20px;
+  margin-block-start: 10px;
+}
+.main__container{
+  block-size: 100%;
+  inline-size: 100%;
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.main__content{
+  block-size: 552px;
+  inline-size: 300px;
+  border-radius: 6px;
+  background-color: #F3F3F3;
+  display: inline-block;
+  box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.43);
+  border-radius: 16px 16px 0px 0px;
+}
+.main__content--active{
+  display: none;
+}
+.content__background{
+  inline-size: 100%;
+  block-size: 193px;
+  background-image: url(../img/batman_background.svg);
+  border-radius: 16px 16px 0px 0px;
+}
+.content__background--active{
+  background-image: url(../img/harleybg.svg);
+}
+.content__description{
+  position: relative;
+  inline-size: 100%;
+  block-size: 336px;
+  padding: 80px 0 0 0;
+}
+.description__title{
+  text-align: center;
+}
+.descrition__paragraph{
+  padding: 16px;
+}
+.description__button{
+  background-color: #00669F;
+  inline-size: 120px;
+  block-size: 44px;
+  display: block;
+  margin: 12px auto;
+  padding: 12px 25px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.8s;
+}
+.description__button:hover{
+  transform: scale(1.1);
+}
+.description__img{
+  block-size: 140px;
+  box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.43);
+  border-radius: 50%;
+  position: absolute;
+  inset-block-start:-78px;
+  inset-inline-start: 80px;
+}
+.description__heart{
+  position: absolute;
+  inset-block-start: -180px;
+  inset-inline-start: 16px;
+  transition: transform 0.2s;
+}
+.description__heart:hover{
+  transform: scale(1.2);
+}
+.footer{
+  margin-block-start: 20px;
+  background-color: #00669F;
+  block-size: 48px;
+  inline-size: 100%;
+  color: white;
+  padding:14px;
+}
+@media screen and (max-width: 768px){
+  .main__content--active{
+    display: block;
+  }
+  .main__container{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+}
+
+@media screen and (max-inline-size: 480px){
+  
+
+
+
+}
