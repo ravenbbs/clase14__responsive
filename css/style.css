@@ -61,11 +61,11 @@ body {
 .content__background{
   inline-size: 100%;
   block-size: 193px;
-  background-image: url(../img/batman_background.svg);
+  background-image: url(../img/fondoBatman.png);
   border-radius: 16px 16px 0px 0px;
 }
 .content__background--active{
-  background-image: url(../img/harleybg.svg);
+  background-image: url(../img/fondoHarleyQuinn.png);
 }
 .content__description{
   position: relative;
