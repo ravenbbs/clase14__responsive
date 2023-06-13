@@ -13,6 +13,7 @@
       <span class="promo__span"> Descuentos 20% </span>
     </section>
     <header class="header">
+      <a href="index.html"><img src="img/logo.svg" alt="Logo heroes"></a>
       <h1 class="header__title">Heroes</h1>
     </header>
     <ul class="header__cta">
@@ -27,28 +28,48 @@
            <p class="form__paragraph">Agregá tu personaje favorito completando las opciones.</p>
           
             <form action="" method="post" class="form__container">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name">
-              <label for="especie">Especie</label>
-              <input type="text" id="especie" name="especie">
-              <label for="fecha">Fecha</label>
-              <input type="date" id="fecha" name="fecha">
-              <label for="upload">Agregar Foto</label>
-              <input type="file" id="upload" name="upload">
-              <input type="text">
-
+              <div class="form__content">
+                <div>
+              <label for="name" >Nombre<br>
+              <input class="border-radius box__form" type="text" id="name" name="name" required>
+              </label>
+                </div>
+                <div>
+              <label for="especie">Especie<br>
+              <input class="border-radius box__form" type="text" id="especie" name="especie" required>
+              </label>
+              </div>
+              </div>
+              
+              <div class="form__content">
+              <div>
+              <label for="fecha">Fecha<br>
+              <input class="border-radius box__form"  type="date" id="fecha" name="fecha" required>
+              </label>
+              </div>
+              <div>
+              <label for="upload">Agregar Foto<br>
+              <input class="border-radius box__form--upload"  type="file" id="upload" name="upload">
+              </label>
+              </div>
+              </div>
+              <div class="form__content">
+                <div>
+              <input class="border-radius box__form--text"  type="text">
+              </div>
+              <div class="form__options box__form--text">
               <fieldset>
                 <legend>Poderes</legend>
-                <input type="checkbox" id="kraken" name="monster" value="K">
+                <input type="checkbox" id="kraken" name="monster">
                 <label for="kraken">Volar</label><br>
             
-                <input type="checkbox" id="sasquatch" name="monster" value="S">
+                <input type="checkbox" id="sasquatch" name="monster">
                 <label for="sasquatch">SuperInteligencia</label><br>
             
-                <input type="checkbox" id="mothman" name="monster" value="M">
+                <input type="checkbox" id="mothman" name="monster">
                 <label for="mothman">Vista de rayo láser</label><br>
                 
-                <input type="checkbox" id="mothman" name="monster" value="M">
+                <input type="checkbox" id="mothman" name="monster">
                 <label for="mothman">Billetera gorda</label>
               </fieldset>
 
@@ -59,8 +80,10 @@
                 <input type="radio" id="sasquatch" name="monster" value="S">
                 <label for="sasquatch">Villano / Villana</label>
               </fieldset>
+             </div>
+            </div>
 
-              <input type="submit" id="submit" class="submit">
+              <span class="submit border-radius" >Añadir</span>
             </form>
             
 

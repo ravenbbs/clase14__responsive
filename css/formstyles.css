@@ -1,9 +1,10 @@
 .main__form{
+  color: rgb(255, 255, 255);
   display: inline-block;
   width: 80vw;
   height: 60vh;
   background-color: #00668f ;
-  border-radius: 4%;
+  border-radius: 22px;
   padding: 0 20px;
 }
 .form__title{
@@ -16,13 +17,80 @@
   color: azure;
   text-align: center;
 }
-
 .form__container{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.form__content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.form__content div{
+  width: 50%;
+
+  min-width: 200px;
+}
+.content{
+  width: 50%;
+}
+
+.box__form{
+height: 50px;
+width: 90%;
+min-width: 200px;
+
+}
+.box__form--text{
+  height: 170px;
+  width: 90%;
+  min-width: 200px;
+}
+.box__form--upload{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.submit{
+  padding: 10px;
+  text-align: center;
+  background-color: #00f0c4;
+  font-size: 2rem;
+  align-self: center;
+  width: 200px;
+  height: 60px;
+  margin: 22px 0;
+}
+
+.border-radius{
+  border-radius: 16px;
 }
 
 
-.submit{
+
+@media screen and (max-width: 768px) {
+  .main__form{
+    width: 90vw;
+    height: max-content;
+    padding: 0 20px 40px 20px;
+  }
+  .box__form--upload{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   
+}
+@media screen and (max-width: 480px) {
+
+  .form__content div{
+    width: 90%;
+  
+    min-width: 200px;
+  }
 }
