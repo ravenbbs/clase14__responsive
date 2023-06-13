@@ -1,0 +1,28 @@
+.main__form{
+  display: inline-block;
+  width: 80vw;
+  height: 60vh;
+  background-color: #00668f ;
+  border-radius: 4%;
+  padding: 0 20px;
+}
+.form__title{
+  margin: 8px;
+  font-size: 2rem;
+  color: azure;
+  text-align: center;
+}
+.form__paragraph{
+  color: azure;
+  text-align: center;
+}
+
+.form__container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.submit{
+  
+}

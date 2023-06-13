@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formstyles.css" />
+    <title>Heroes</title>
+  </head>
+  <body>
+    <section class="header__promo">
+      <span class="promo__span"> Descuentos 20% </span>
+    </section>
+    <header class="header">
+      <h1 class="header__title">Heroes</h1>
+    </header>
+    <ul class="header__cta">
+      <li>Contacto</li>
+      <li>Registrarme</li>
+      <li>Ingresar</li>
+    </ul>
+    <main class="main">
+      <section class="main__container">
+        <div class="main__form">
+           <h2 class="form__title">Añadí tu super!</h2>
+           <p class="form__paragraph">Agregá tu personaje favorito completando las opciones.</p>
+          
+            <form action="" method="post" class="form__container">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name">
+              <label for="especie">Especie</label>
+              <input type="text" id="especie" name="especie">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha">
+              <label for="upload">Agregar Foto</label>
+              <input type="file" id="upload" name="upload">
+              <input type="text">
+
+              <fieldset>
+                <legend>Poderes</legend>
+                <input type="checkbox" id="kraken" name="monster" value="K">
+                <label for="kraken">Volar</label><br>
+            
+                <input type="checkbox" id="sasquatch" name="monster" value="S">
+                <label for="sasquatch">SuperInteligencia</label><br>
+            
+                <input type="checkbox" id="mothman" name="monster" value="M">
+                <label for="mothman">Vista de rayo láser</label><br>
+                
+                <input type="checkbox" id="mothman" name="monster" value="M">
+                <label for="mothman">Billetera gorda</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Tipo de personaje</legend>
+                <input type="radio" id="kraken" name="monster" value="K">
+                <label for="kraken">Héroe / Heroina</label><br>
+                <input type="radio" id="sasquatch" name="monster" value="S">
+                <label for="sasquatch">Villano / Villana</label>
+              </fieldset>
+
+              <input type="submit" id="submit" class="submit">
+            </form>
+            
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__paragraph">
+        Todos los derechos reservados a FRONT END 1
+      </p>
+    </footer>
+  </body>
+</html>

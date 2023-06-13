@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html {
+  min-height: 100%;
+  position: relative;
+}
 body {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  height: 100%;
 }
+
 .header__promo{
   background-color: #1CD1B0;
   block-size: 38px; 
@@ -23,8 +28,8 @@ body {
   inset-block-start: 0;
   inline-size: 100%;
   background-color: #00669F;
-  block-size: 101px;
-  box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.43);
+  block-size: 80px;
+
   z-index: 1;
   padding: 22px;
 }
@@ -32,9 +37,37 @@ body {
   margin:0;
   font-weight: 500;
 }
+
+.header__cta{
+  background-color: #001D2D;
+  color: #F3F3F3;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+  align-items: center;
+  padding: 0 22px;
+  list-style: none;
+}
+.header__cta li {
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+.header__cta li:hover {
+  background-color: #d3d3d3;
+  color: #001D2D;
+}
+.icon{
+  position: fixed;
+  right: 12px;
+  top : 50%;
+  z-index: 4;
+}
 .main{
   position: relative;
-  min-block-size: 100%;
+  min-height: 100%;
   padding: 0 20px;
   margin-block-start: 10px;
 }
@@ -111,6 +144,8 @@ body {
   transform: scale(1.2);
 }
 .footer{
+  position: absolute;
+  bottom: 0;
   margin-block-start: 20px;
   background-color: #00669F;
   block-size: 48px;
