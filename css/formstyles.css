@@ -46,7 +46,8 @@
  width: 90%;
  min-width: 200px;
  color: rgb(116, 116, 116);
- margin-top: 6px
+ margin-top: 6px;
+ padding:12px;
 }
 .hover{
   transition:  0.3s linear;

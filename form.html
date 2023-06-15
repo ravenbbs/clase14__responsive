@@ -27,7 +27,7 @@
            <h2 class="form__title">Añadí tu super!</h2>
            <p class="form__paragraph">Agregá tu personaje favorito completando las opciones.</p>
           
-            <form action="https://colorlib.com/wp/template/colorlib-error-404-12/" method="post" class="form__container">
+            <form  action="404.html/" method="post" class="form__container">
               <div class="form__content">
                 <div>
               <label for="name" >Nombre<br>
@@ -54,14 +54,14 @@
               </div>
               <div>
               <label for="upload">Agregar Foto<br>
-                <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+                <section action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
                   <div class="hover outline" id="yourBtn" onclick="getFile()">click to upload a file</div>
                   <!-- this is your file input tag, so i hide it!-->
                   <!-- i used the onchange event to fire the form submission-->
                   <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file" value="upload" onchange="sub(this)" /></div>
                   <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
                   <!-- <input type="submit" value='submit' > -->
-                </form>
+                </section>
               </label>
               </div>
               </div>
@@ -95,7 +95,7 @@
              </div>
             </div>
               <section class="send">
-              <input type="submit" class="submit border-radius" value="Añadir">
+              <input type="submit" class="submit border-radius" value="Añadir" onclick="red()">
             </section>
             </form>
             
@@ -122,6 +122,9 @@
       document.myForm.submit();
       event.preventDefault();
     }
+    function red() { 
+      location.href = "404.html"; 
+   }
     </script>
   </body>
 </html>
