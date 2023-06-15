@@ -31,20 +31,25 @@
               <div class="form__content">
                 <div>
               <label for="name" >Nombre<br>
-              <input class="border-radius box__form" type="text" id="name" name="name" required>
+              <input class="border-radius box__form outline" type="text" id="name" name="name" required>
               </label>
                 </div>
                 <div>
-              <label for="especie">Especie<br>
-              <input class="border-radius box__form" type="text" id="especie" name="especie" required>
-              </label>
+              <label for="especie">Especie</label>
+              <select name="especie" id="especie" form="especie" class="border-radius box__form outline">
+                <option value="nio" hidden disabled selected>Especie</option>
+                <option value="wal">Terricola</option>
+                <option value="ter">kryptoniano</option>
+                <option value="whi">Asgardiano</option>
+                <option value="te">Desconocida</option>
+              </select>
               </div>
               </div>
               
               <div class="form__content">
               <div>
               <label for="fecha">Fecha<br>
-              <input class="border-radius box__form"  type="date" id="fecha" name="fecha" required>
+              <input class="border-radius box__form outline"  type="date" id="fecha" name="fecha" required>
               </label>
               </div>
               <div>
@@ -55,7 +60,7 @@
               </div>
               <div class="form__content">
                 <div>
-              <input class="border-radius box__form--text"  type="text">
+                  <textarea placeholder="Descripción" class="border-radius box__form--text text__area  outline"></textarea>
               </div>
               <div class="form__options box__form--text">
               <fieldset>
@@ -72,8 +77,8 @@
                 <input type="checkbox" id="mothman" name="monster">
                 <label for="mothman">Billetera gorda</label>
               </fieldset>
-
-              <fieldset>
+              <hr>
+              <fieldset >
                 <legend>Tipo de personaje</legend>
                 <input type="radio" id="kraken" name="monster" value="K">
                 <label for="kraken">Héroe / Heroina</label><br>
@@ -82,8 +87,7 @@
               </fieldset>
              </div>
             </div>
-
-              <span class="submit border-radius" >Añadir</span>
+              <input type="submit" class="submit border-radius">
             </form>
             
 

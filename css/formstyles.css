@@ -2,7 +2,8 @@
   color: rgb(255, 255, 255);
   display: inline-block;
   width: 80vw;
-  height: 60vh;
+  height: 66vh;
+  min-height: 580px;
   background-color: #00668f ;
   border-radius: 22px;
   padding: 0 20px;
@@ -16,6 +17,7 @@
 .form__paragraph{
   color: azure;
   text-align: center;
+  margin: 0 0 12px 0;
 }
 .form__container{
   display: flex;
@@ -40,9 +42,11 @@
 }
 
 .box__form{
-height: 50px;
-width: 90%;
-min-width: 200px;
+  border: none;
+ height: 50px;
+ width: 90%;
+ min-width: 200px;
+ color: rgb(116, 116, 116);
 
 }
 .box__form--text{
@@ -55,7 +59,25 @@ min-width: 200px;
   flex-wrap: wrap;
   width: 90%;
 }
+.text__area{
+  padding: 12px;
+  height: 90%;
+  resize: none;
+}
+.outline:focus{
+ outline: 2px solid #00f0c4;
 
+}
+fieldset{
+  border: none;
+}
+hr{
+  margin: 12px 0
+}
+input[type="checkbox"],input[type="radio"] {
+  cursor: pointer;
+  margin: 6px 0;
+}
 .submit{
   padding: 10px;
   text-align: center;
@@ -64,7 +86,9 @@ min-width: 200px;
   align-self: center;
   width: 200px;
   height: 60px;
-  margin: 22px 0;
+  margin: 62px 0 0 0;
+  border: none;
+  cursor: pointer;
 }
 
 .border-radius{
