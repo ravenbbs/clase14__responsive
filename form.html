@@ -27,16 +27,16 @@
            <h2 class="form__title">Añadí tu super!</h2>
            <p class="form__paragraph">Agregá tu personaje favorito completando las opciones.</p>
           
-            <form action="" method="post" class="form__container">
+            <form action="https://colorlib.com/wp/template/colorlib-error-404-12/" method="post" class="form__container">
               <div class="form__content">
                 <div>
               <label for="name" >Nombre<br>
-              <input class="border-radius box__form outline" type="text" id="name" name="name" required>
+              <input class="hover border-radius box__form outline" type="text" id="name" name="name" required>
               </label>
                 </div>
                 <div>
-              <label for="especie">Especie</label>
-              <select name="especie" id="especie" form="especie" class="border-radius box__form outline">
+              <label for="especie">Especie</label><br>
+              <select name="especie" id="especie" form="especie" class="hover border-radius box__form outline">
                 <option value="nio" hidden disabled selected>Especie</option>
                 <option value="wal">Terricola</option>
                 <option value="ter">kryptoniano</option>
@@ -49,20 +49,27 @@
               <div class="form__content">
               <div>
               <label for="fecha">Fecha<br>
-              <input class="border-radius box__form outline"  type="date" id="fecha" name="fecha" required>
+              <input class="border-radius box__form outline hover"  type="date" id="fecha" name="fecha" required>
               </label>
               </div>
               <div>
               <label for="upload">Agregar Foto<br>
-              <input class="border-radius box__form--upload"  type="file" id="upload" name="upload">
+                <form action="#type your action here" method="POST" enctype="multipart/form-data" name="myForm">
+                  <div class="hover outline" id="yourBtn" onclick="getFile()">click to upload a file</div>
+                  <!-- this is your file input tag, so i hide it!-->
+                  <!-- i used the onchange event to fire the form submission-->
+                  <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file" value="upload" onchange="sub(this)" /></div>
+                  <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+                  <!-- <input type="submit" value='submit' > -->
+                </form>
               </label>
               </div>
               </div>
               <div class="form__content">
                 <div>
-                  <textarea placeholder="Descripción" class="border-radius box__form--text text__area  outline"></textarea>
+                  <textarea placeholder="Descripción" class="border-radius box__form--text text__area hover  outline"></textarea>
               </div>
-              <div class="form__options box__form--text">
+              <div class="form__options box__form--text ">
               <fieldset>
                 <legend>Poderes</legend>
                 <input type="checkbox" id="kraken" name="monster">
@@ -87,7 +94,9 @@
               </fieldset>
              </div>
             </div>
-              <input type="submit" class="submit border-radius">
+              <section class="send">
+              <input type="submit" class="submit border-radius" value="Añadir">
+            </section>
             </form>
             
 
@@ -100,5 +109,19 @@
         Todos los derechos reservados a FRONT END 1
       </p>
     </footer>
+
+    <script type="text/javascript">
+    function getFile() {
+      document.getElementById("upfile").click();
+    }
+    
+    function sub(obj) {
+      var file = obj.value;
+      var fileName = file.split("\\");
+      document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+      document.myForm.submit();
+      event.preventDefault();
+    }
+    </script>
   </body>
 </html>

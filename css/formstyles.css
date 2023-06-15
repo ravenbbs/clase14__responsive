@@ -2,11 +2,11 @@
   color: rgb(255, 255, 255);
   display: inline-block;
   width: 80vw;
-  height: 66vh;
-  min-height: 580px;
+  height: 68vh;
+  min-height: 610px;
   background-color: #00668f ;
   border-radius: 22px;
-  padding: 0 20px;
+  padding: 12px 20px;
 }
 .form__title{
   margin: 8px;
@@ -40,13 +40,19 @@
 .content{
   width: 50%;
 }
-
 .box__form{
   border: none;
  height: 50px;
  width: 90%;
  min-width: 200px;
  color: rgb(116, 116, 116);
+ margin-top: 6px
+}
+.hover{
+  transition:  0.3s linear;
+}
+.hover:hover{
+background-color: #00f0c4;
 
 }
 .box__form--text{
@@ -78,12 +84,32 @@ input[type="checkbox"],input[type="radio"] {
   cursor: pointer;
   margin: 6px 0;
 }
+label{
+  margin: 12px
+}
+#yourBtn {
+  color: rgb(117, 117, 117);
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 12px 0 12px 0;
+}
+#yourBtn:hover{
+  background-color: #00f0c4;
+}
+.send{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
 .submit{
   padding: 10px;
   text-align: center;
   background-color: #00f0c4;
   font-size: 2rem;
-  align-self: center;
   width: 200px;
   height: 60px;
   margin: 62px 0 0 0;
@@ -94,7 +120,6 @@ input[type="checkbox"],input[type="radio"] {
 .border-radius{
   border-radius: 16px;
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -110,7 +135,7 @@ input[type="checkbox"],input[type="radio"] {
   }
   
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 489px) {
 
   .form__content div{
     width: 90%;
